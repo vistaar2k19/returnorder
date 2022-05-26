@@ -7,7 +7,7 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:3.1 AS build
 WORKDIR /src
-COPY ["Authentication/Authentication.csproj", "Authentication/"]
+COPY ["Authentication.csproj", "Authentication/"]
 RUN dotnet restore "Authentication/Authentication.csproj"
 COPY . .
 WORKDIR "/src/Authentication"
