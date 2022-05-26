@@ -22,6 +22,7 @@ namespace Authentication.Data
                 return true;
             }
             else return false;
+            //cloud
 
             //return _context.UserLogin.Any(u => u.UserId == userId && u.UserPassword == userPassword);
         }
